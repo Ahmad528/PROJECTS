@@ -3,7 +3,7 @@ some awesome projects
 
 <html>
   <head>
-    <title></title>
+    <title> First Project</title>
   </head>
   <body>
     <p>Hello world</p>
