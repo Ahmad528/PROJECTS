@@ -13,7 +13,7 @@ function clocktime(){
     min=addZero(min);
     sec=addZero(sec);
     var a=5;
-    document.getElementById('clock').innerHTML= `${hours}:${min}:${sec} ${formatT}  ${dat}/${sjd}`;
+    document.getElementById('clock').innerHTML= `${hours} : ${min} : ${sec} ${formatT} <br> ${dat}/${sjd}`;
 }
 function convertFormat(time){
     let format='AM';
