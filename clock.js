@@ -7,13 +7,16 @@ function clocktime(){
     let day=date.getDay();
     let sjd=date.getFullYear();
 
+    //days array
+    var weekDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
     let formatT=convertFormat(hours);
     hours=checkTime(hours);
     hours=addZero(hours);
     min=addZero(min);
     sec=addZero(sec);
     var a=5;
-    document.getElementById('clock').innerHTML= `${hours} : ${min} : ${sec} ${formatT} <br> ${dat}/${sjd}`;
+    document.getElementById('clock').innerHTML= `${hours} : ${min} : ${sec} ${formatT} <br> ${dat}-`+weekDays[day]+`-${sjd}`;
 }
 function convertFormat(time){
     let format='AM';
@@ -37,11 +40,7 @@ function checkTime(time){
 
 }
 
-
-
 //function set()
-
-
 
 function addZero(time){
     if(time<10)
